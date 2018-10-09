@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="activity_in_out" parent="android:Animation.Activity">
+        <item name="android:activityCloseExitAnimation">@anim/camera_activity_out</item>
+        <item name="android:activityOpenEnterAnimation">@anim/camera_activity_in</item>
+    </style>
+    <style name="camera_activity_anim" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/activity_in_out</item>
+    </style>
+
+</resources>
